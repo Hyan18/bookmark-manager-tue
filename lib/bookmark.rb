@@ -1,8 +1,8 @@
 require 'pg'
 
-class Bookmarks
+class Bookmark
 
-  def self.show
+  def self.all
     con = PG.connect :dbname => 'bookmark_manager'
 
     rs = con.exec "SELECT url FROM bookmarks"
