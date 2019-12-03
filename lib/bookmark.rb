@@ -3,11 +3,11 @@ require 'pg'
 class Bookmark
 
   def self.all
-    con = PG.connect :dbname => 'bookmark_manager'
+    connection = PG.connect :dbname => 'bookmark_manager'
 
-    rs = con.exec "SELECT url FROM bookmarks"
+    result = connection.exec "SELECT url FROM bookmarks"
 
-    urls = rs.to_a.map { |row| row["url"] }
+    result.map { |bookmark| bookmark["url"] }
   end
 
 end
