@@ -1,10 +1,17 @@
-## User Story
+## User Stories
 
 ```
 As a user,
-So I can save important webpages,
+So I can remind myself of important webpages,
 I would like to see a list of bookmarks.
 ```
+
+```
+As a user,
+So I can go back to important webpages,
+I would like to be able to add bookmarks.
+```
+
 ![class diagram](./images/class_diagram.png)
 
 ## Setup
